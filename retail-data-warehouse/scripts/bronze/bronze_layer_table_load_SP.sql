@@ -1,3 +1,22 @@
+/*
+=============================================================
+Stored Procedure: Load Bronze Layer (Source -> Bronze)
+=============================================================
+Overview
+    This script defines the stored procedure bronze.sp_load_bronze_data to load the data from sources into the bronze tables.
+	Keep in mind that the path for each source needs to be defined in the stored procedure before execution
+	Steps:
+		1) Truncates the tables before loading
+		2) Uses the BULK INSERT command to load the data from the sources into the tables
+	
+Parameters:
+    None
+	This stored procedure does not accept any parameters or return any values
+
+Usage Example:
+    EXEC bronze.sp_load_bronze_data;
+*/
+
 CREATE OR ALTER PROCEDURE bronze.sp_load_bronze_data AS
 BEGIN
     DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;

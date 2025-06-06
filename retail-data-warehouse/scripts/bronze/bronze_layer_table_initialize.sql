@@ -1,3 +1,16 @@
+/*
+=============================================================
+DDL Script: Drop and re-create Bronze Tables
+=============================================================
+Overview
+    This script will re-define the DDL structure of the bronze tables.
+	
+CAUTION:
+    Executing this script will completely remove the bronze tables if they exist exists.
+	This action is irreversible and will erase all contained data. Before proceeding, verify you have appropriate
+	backups in place.
+*/
+
 IF OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL
    DROP TABLE bronze.crm_cust_info;
 CREATE TABLE bronze.crm_cust_info(

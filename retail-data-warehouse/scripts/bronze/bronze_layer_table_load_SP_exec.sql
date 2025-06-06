@@ -1,3 +1,12 @@
+/*
+=============================================================
+Execution Script: Load Bronze Layer (Source -> Bronze)
+=============================================================
+Overview
+    This script executes the stored procedure bronze.sp_load_bronze_data to load the data from sources into the bronze tables.
+	It also does data validation
+*/
+
 EXEC bronze.sp_load_bronze_data;
 
 
