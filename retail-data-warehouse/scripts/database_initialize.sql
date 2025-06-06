@@ -18,8 +18,8 @@ GO
 -- Drop and recreate the 'DataWarehouse' database
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'retail_data_warehouse')
 BEGIN
-    ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-    DROP DATABASE DataWarehouse;
+    ALTER DATABASE retail_data_warehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE retail_data_warehouse;
 END;
 GO
 
