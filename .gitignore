@@ -9,7 +9,6 @@
 *.user
 *.userosscache
 *.sln.docstates
-[Dd]atasets/
 [Dd]atasets_bkp/
 [Dd]ocumentation/
 
